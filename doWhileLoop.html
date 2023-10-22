@@ -1,5 +1,3 @@
-<!-- DO WHILE LOOP-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,13 +9,14 @@
 </head>
 
 <body>
-    <h1>Welcome, kindly find below actions for today</h1>
+    <h1>Welcome Lucky!, you have some queries to review</h1>
     <table id = "tHeadings">
         <tr>
             <th>ID</th>
             <th>Student</th>
             <th>Inquery</th>
             <th>Status</th>
+            <th>Action</th>
         </tr>
         <tr id = "tRows">
 
@@ -56,12 +55,13 @@
 
             // render the actions in the table row
             var actionCell = document.createElement("td");
-            // actionCell.innerHTML = `<a href="#">APPROVED</a> &nbsp &nbsp &nbsp <a href="#">DECLINED</a>`
+            actionCell.innerHTML = `<a href="#">APPROVED</a> &nbsp &nbsp &nbsp <a href="#">DECLINED</a>`
 
             row.appendChild(idcell);
             row.appendChild(studentcell);
             row.appendChild(querycell)
             row.appendChild(statuscell)
+            row.appendChild(actionCell)
             
             
             tHeadings.appendChild(row);
